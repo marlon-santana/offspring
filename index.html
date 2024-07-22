@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Tributo: The Offspring</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Cabeçalho -->
+      <div class="header">
+        <h1 class="main-title">The Offspring</h1>
+        <p class="main-paragraph">Uma banda de Rock formada na Califórnia</p>
+      </div>
+      <!-- Imagem de destaque -->
+      <div class="featured-image">
+        <button id="playButton">Reproduzir Áudio</button>
+        <audio id="audioPlayer" src="./audio/The Offspring - The Kids Aren't Alright (Official Music Video).mp3"></audio>
+        <figure>
+          <img src="img/banda1.jpg" alt="A banda The Offspring" />
+          <figcaption>Integrantes da banda</figcaption>
+        </figure>
+      </div>
+      <!-- Biografia -->
+      <div class="biography-container">
+        <h2>Sobre os anos iniciais da banda</h2>
+        <p>
+          Em 1984, os adolescentes
+          <span class="bold">Dexter Holland e Greg K</span>., que eram colegas
+          de ginásio em Huntington Beach, resolveram formar uma banda após
+          saírem de um concerto da banda de projeção local, Social Distortion.
+        </p>
+        <p>
+          Mais tarde, Kevin "Noodles" Wasserman foi chamado para banda pelo seu
+          <span class="bold"
+            >infame talento de conseguir bebidas alcoólicas</span
+          >
+          para os integrantes da banda, na época menores de idade.
+        </p>
+        <p>
+          Tocando sob o nome de Manic Subsidal, em 1985 a banda decide trocar de
+          nome para <span class="bold">The Offspring</span>. Seu primeiro
+          single, "I'll Be Waiting/Blackball", foi lançado no formato de vinil
+          pela gravadora independente Black Label Records e teve tiragem de mil
+          cópias.
+        </p>
+        <p>
+          Seu álbum de estreia, The Offspring, foi lançado pela gravadora
+          independente Nemesis Records em 1989 e produzido por Thom Wilson,
+          <span class="bold">
+            vendendo três mil cópias dessa estreia em vinil.</span
+          >
+        </p>
+      </div>
+      <!-- Container de citação -->
+      <div class="quotes-container">
+        <blockquote>
+          "Vender mais 10 milhões de álbuns não é a prioridade, lançar algo que
+          nos orgulhamos é."
+        </blockquote>
+        <p>Dexter Holland</p>
+      </div>
+      <!-- Curiosidades -->
+      <div class="curiosities-container">
+        <h2>Curiosidades da banda:</h2>
+        <ul>
+          <li>Noodles achava que a banda não seria um sucesso</li>
+          <li>O apelido de Noodles não vem do macarrão</li>
+          <li>Dexter é um <span class="bold">piloto</span> licenciado</li>
+          <li>
+            A primeira música da banda foi originada em um passeio de carro
+          </li>
+          <li>A banda não gosta de fazer publicidade</li>
+        </ul>
+      </div>
+      <!-- Segunda citação -->
+      <div class="quotes-container">
+        <blockquote>
+          "Chances thrown <br />
+          Nothing's free <br />
+          Longing for what used to be <br />
+          Still, it's hard <br />
+          Hard to see <br />
+          Fragile lives, shattered dreams"
+        </blockquote>
+        <p>The Offspring - The kids aren't alright</p>
+      </div>
+      <!-- Segunda imagem -->
+      <div class="img-bold">
+        <figure>
+          <img src="img/offspring_2.jpeg" alt="The Offspring em um show" />
+          <figcaption>Dexter Holland comandando a Offspring</figcaption>
+        </figure>
+      </div>
+      <!-- Mais informações -->
+      <div class="moreinfo-container">
+        <h2>Mais informações:</h2>
+        <p>
+          Você pode conhecer mais sobre a banda
+          <a href="https://pt.wikipedia.org/wiki/The_Offspring"
+            >clicando aqui</a
+          > ou nas imagens abaixo:
+        </p>
+      </div>
+
+      <div class="dialog-container">
+        <div class="dialog">
+            <img id="openDialogButton" src="./img/dexter holland.jpg" alt="Dexter Holland" width="198px" height="300px" style="object-fit: cover; border-radius: 10px; border: none;" />
+            <dialog id="myDialog">
+                <h3>Dexter Holland </h3>
+                <p><strong>Nome completo:</strong>  Bryan Keith "Dexter" Holland</p>
+                <p><strong>Data de nascimento:</strong> 29 de dezembro de 1965</p>
+                <p><strong>Local de nascimento:</strong>Garden Grove, Califórnia, EUA</p>
+                <p><strong> Hobbies:</strong> <br>
+                    Dexter é um piloto licenciado e frequentemente voa em seu próprio avião.
+                    Ele também é um microbiologista e tem um doutorado em Biologia Molecular.
+                    Além disso, Dexter é um ávido surfista.
+                </p>
+                <div class="icon-x" onclick="document.getElementById('myDialog').close()">&#10005;</div>
+            </dialog>
+        </div>
+
+        <div class="dialog">
+            <img id="openDialogButton2" src="./img/greg k.jfif" alt="greg k" width="198px" height="300px" style="object-fit: cover;  border-radius: 10px;" />
+            <dialog id="myDialog2">
+                <h3>Greg K.</h3>
+                <p><strong>Nome completo:</strong> Gregory David Kriesel</p>
+                <p><strong>Data de nascimento:</strong> 20 de janeiro de 1965</p>
+                <p><strong>Local de nascimento:</strong> Glendale, Califórnia, EUA</p>
+                <p><strong>Hobbies:</strong> <br>
+                    Greg K. é conhecido por seu interesse em esportes, especialmente hóquei no gelo.
+                    Ele também gosta de motocicletas e frequentemente anda de moto em seu tempo livre.
+                </p>
+                <div class="icon-x" onclick="document.getElementById('myDialog2').close()">&#10005;</div>
+            </dialog>
+        </div>
+
+        <div class="dialog">
+            <img id="openDialogButton3" src="./img/Kevin Noodles.webp" alt="greg k" width="198px" height="300px" style="object-fit: cover;  border-radius: 10px;" />
+            <dialog id="myDialog3">
+                <h3>Kevin "Noodles" Wasserman</h3>
+                <p><strong>Nome completo:</strong> Kevin John Wasserman</p>
+                <p><strong>Data de nascimento:</strong> 4 de fevereiro de 1963</p>
+                <p><strong>Local de nascimento:</strong> Los Angeles, Califórnia, EUA</p>
+                <p><strong>Hobbies:</strong> <br>
+                    Noodles gosta de tocar guitarra e coleciona guitarras.
+                    Ele também aprecia a carpintaria e trabalha em projetos de madeira.
+                </p>
+                <div class="icon-x" onclick="document.getElementById('myDialog3').close()">&#10005;</div>
+            </dialog>
+        </div>
+
+    </div>
+
+    <section class="music-list">
+        <div class="accordion">
+            <h3>Letras das Músicas</h3>
+            <button class="accordion-button">The Kids Aren't Alright</button>
+            <div class="accordion-content">
+                <p>When we were young, the future was so bright</p>
+                <p>The old neighborhood was so alive</p>
+                <p>And every kid on the whole damn street</p>
+                <p>Was going to make it big in every beat</p>
+                <p>Now the neighborhood's cracked and torn</p>
+                <p>The kids are grown up, but their lives are worn</p>
+                <p>How can one little street swallow so many lives?</p>
+                <p>Chances thrown</p>
+                <p>Nothing's free</p>
+                <p>Longing for what used to be</p>
+                <p>Still, it's hard</p>
+                <p>Hard to see</p>
+                <p>Fragile lives, shattered dreams</p>
+                <p>Jamie had a chance, well, she really did</p>
+                <p>Instead, she dropped out and had a couple of kids</p>
+                <p>Mark still lives at home because he's got no job</p>
+                <p>He just plays guitar and smokes a lot of pot</p>
+                <p>Jay committed suicide</p>
+                <p>Brandon OD'd and died</p>
+                <p>What the hell is going on?</p>
+                <p>The cruelest dream, reality</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-button">Self Esteem</button>
+            <div class="accordion-content">
+                <p>I wrote her off for the tenth time today</p>
+                <p>And practiced all the things I would say</p>
+                <p>But she came over I lost my nerve</p>
+                <p>I took her back and made her dessert</p>
+                <p>Now I know I'm being used</p>
+                <p>That's okay, man, 'cause I like the abuse</p>
+                <p>I know she's playing with me</p>
+                <p>But that's ok, 'cause I've got no self esteem</p>
+
+                <p>We make plans to go out at night</p>
+                <p>I wait till 2 then I turn out the light</p>
+                <p>This rejection's got me so low</p>
+                <p>If she keeps it up I just might tell her so</p>
+
+                <p>When she's saying, oh, that she wants only me</p>
+                <p>Then I wonder why she sleeps with my friends</p>
+                <p>When she's saying, oh, that I'm like a disease</p>
+                <p>Then I wonder how much more I can spend</p>
+                <p>Well, I guess I should stick up for myself</p>
+                <p>But I really think it's better this way</p>
+                <p>The more you suffer, the more it shows you really care</p>
+                <p>Right? Yeah!</p>
+
+                <p>Now I'll relate this a little bit</p>
+                <p>That happens more than I'd like to admit</p>
+                <p>Late at night she knocks on my door</p>
+                <p>She's drunk again and looking to score</p>
+                <p>Now I know I should say no</p>
+                <p>But it's kind of hard when she's ready to go</p>
+                <p>I may be dumb, but I'm not a dweeb</p>
+                <p>I'm just a sucker with no self esteem</p>
+
+                <p>When she's saying, oh, that she wants only me</p>
+                <p>Then I wonder why she sleeps with my friends</p>
+                <p>When she's saying, oh, that I'm like a disease</p>
+                <p>Then I wonder how much more I can spend</p>
+                <p>Well, I guess I should stick up for myself</p>
+                <p>But I really think it's better this way</p>
+                <p>The more you suffer, the more it shows you really care</p>
+                <p>Right? Yeah!</p>
+
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-button">Pretty Fly (For A White Guy)</button>
+            <div class="accordion-content">
+                <p>(Gunter glieben glauten globen)</p>
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+                <p>And all the girlies say I'm pretty fly for a white guy</p>
+        
+                <p>Uno, dos, tres, cuatro, cinco, cinco, seis</p>
+        
+                <p>You know, it's kinda hard just to get along today</p>
+                <p>Our subject isn't cool, but he fakes it anyway</p>
+                <p>He may not have a clue and he may not have style</p>
+                <p>But everything he lacks, well, he makes up in denial</p>
+        
+                <p>So don't debate a player straight</p>
+                <p>You know he really doesn't get it anyway</p>
+                <p>Gotta play the field and keep it real</p>
+                <p>For you, no way</p>
+                <p>For you, no way</p>
+                <p>So if you don't rate, just overcompensate</p>
+                <p>At least that you'll know you can always go on Ricki Lake</p>
+                <p>The world needs wannabes, ah</p>
+                <p>So, hey, hey, do that brand new thing</p>
+        
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+                <p>And all the girlies say I'm pretty fly for a white guy</p>
+        
+                <p>He needs some cool tunes, not just any will suffice</p>
+                <p>But they didn't have Ice Cube, so he bought Vanilla Ice</p>
+                <p>Now cruising in his Pinto, he sees homies as he pass</p>
+                <p>But if he looks twice, they're gonna kick his lily ass</p>
+        
+                <p>So don't debate a player straight</p>
+                <p>You know he really doesn't get it anyway</p>
+                <p>Gotta play the field and keep it real</p>
+                <p>For you, no way</p>
+                <p>For you, no way</p>
+                <p>So if you don't rate, just overcompensate</p>
+                <p>At least that you'll know you can always go on Ricki Lake</p>
+                <p>The world wants wannabes, ah</p>
+                <p>So, hey, hey, do that brand new thing</p>
+        
+                <p>Now he's getting a tattoo, yeah, he's getting ink done</p>
+                <p>He asked for a thirteen, but they drew a thirty-one</p>
+                <p>Friends say he's trying too hard and he's not quite hip</p>
+                <p>But in his own mind, he's the, he's the dopest trip</p>
+        
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+                <p>(Give it to me, baby)</p>
+                <p>Uh-huh, uh-huh</p>
+        
+                <p>Uno, dos, tres, cuatro, cinco, cinco, seis</p>
+        
+                <p>So don't debate a player straight</p>
+                <p>You know he really doesn't get it anyway</p>
+                <p>Gotta play the field and keep it real</p>
+                <p>For you, no way</p>
+                <p>For you, no way</p>
+                <p>So if you don't rate, just overcompensate</p>
+                <p>At least that you'll know you can always go on Ricki Lake</p>
+                <p>The world needs wannabes, ah</p>
+                <p>The world loves wannabes, ah</p>
+                <p>Let's get some more wannabes, ah</p>
+                <p>So, hey, hey, do that brand new thing</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-button">You're Gonna Go Far, Kid</button>
+            <div class="accordion-content">
+                <p>Show me how to lie</p>
+                <p>You're getting better all the time</p>
+                <p>And turning all against the one</p>
+                <p>Is an art that's hard to teach</p>
+                <p>Another clever word</p>
+                <p>Sets off an unsuspecting herd</p>
+                <p>And as you step back into line</p>
+                <p>A mob jumps to their feet</p>
+        
+                <p>Now dance, fucker, dance</p>
+                <p>Man, he never had a chance</p>
+                <p>And no one even knew</p>
+                <p>It was really only you</p>
+        
+                <p>And now you steal away</p>
+                <p>Take him out today</p>
+                <p>Nice work you did</p>
+                <p>You're gonna go far, kid</p>
+        
+                <p>With a thousand lies</p>
+                <p>And a good disguise</p>
+                <p>Hit 'em right between the eyes</p>
+                <p>Hit 'em right between the eyes</p>
+                <p>When you walk away</p>
+                <p>Nothing more to say</p>
+                <p>See the lightning in your eyes</p>
+                <p>See 'em running for their lives</p>
+        
+                <p>Slowly out of line</p>
+                <p>And drifting closer in your sights</p>
+                <p>So play it out, I'm wide awake</p>
+                <p>It's a scene about me</p>
+                <p>There's something in your way</p>
+                <p>And now someone is gonna pay</p>
+                <p>And if you can't get what you want</p>
+                <p>Well, it's all because of me</p>
+        
+                <p>Now dance, fucker, dance</p>
+                <p>Man, I never had a chance</p>
+                <p>And no one even knew</p>
+                <p>It was really only you</p>
+        
+                <p>And now you lead the way</p>
+                <p>Show the light of day</p>
+                <p>Nice work you did</p>
+                <p>You're gonna go far, kid</p>
+        
+                <p>Trust, deceived!</p>
+        
+                <p>With a thousand lies</p>
+                <p>And a good disguise</p>
+                <p>Hit 'em right between the eyes</p>
+                <p>Hit 'em right between the eyes</p>
+                <p>When you walk away</p>
+                <p>Nothing more to say</p>
+                <p>See the lightning in your eyes</p>
+                <p>See 'em running for their lives</p>
+        
+                <p>Now dance, fucker, dance</p>
+                <p>He never had a chance</p>
+                <p>And no one even knew</p>
+                <p>It was really only you</p>
+        
+                <p>So dance, fucker, dance</p>
+                <p>I never had a chance</p>
+                <p>It was really only you</p>
+        
+                <p>With a thousand lies</p>
+                <p>And a good disguise</p>
+                <p>Hit 'em right between the eyes</p>
+                <p>Hit 'em right between the eyes</p>
+                <p>When you walk away</p>
+                <p>Nothing more to say</p>
+                <p>See the lightning in your eyes</p>
+                <p>See 'em running for their lives</p>
+        
+                <p>Clever alibis</p>
+                <p>Lord of the flies</p>
+                <p>Hit 'em right between the eyes</p>
+                <p>Hit 'em right between the eyes</p>
+                <p>When you walk away</p>
+                <p>Nothing more to say</p>
+                <p>See the lightning in your eyes</p>
+                <p>See 'em running for their lives</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
