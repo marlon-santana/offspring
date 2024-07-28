@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeão com CSS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        /* Estilização básica */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    
+        .accordion-2 {
+            width: 100%;
+    
+            border-radius: 5px;
+            overflow: hidden;
+            /* Garante que nada vazará do container */
+        }
+
+        .accordion-header {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            user-select: none;
+        }
+
+        .accordion-content-2 {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.9s ease, opacity 0.9s ease;
+            padding: 0 10px;
+            background-color: #fafafa;
+        }
+
+        /* Esconda o checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Mostrar o conteúdo quando o checkbox está marcado */
+        input[type="checkbox"]:checked+.accordion-header+.accordion-content-2 {
+            max-height: 500px;
+            /* Ajuste conforme necessário */
+            opacity: 1;
+            padding: 10px;
+        }
+    </style>
+    </head>
+
+<body>
+    <div class="accordion-2">
+        <!-- Checkbox e label associados -->
+        <input type="checkbox" id="accordion-toggle">
+        <label class="accordion-header" for="accordion-toggle">
+            Letras das Músicas
+        </label>
+        <div class="accordion-content-2">
+            <p>When we were young, the future was so bright</p>
+            <p>The old neighborhood was so alive</p>
+            <p>And every kid on the whole damn street</p>
+            <p>Was going to make it big in every beat</p>
+            <p>Now the neighborhood's cracked and torn</p>
+            <p>The kids are grown up, but their lives are worn</p>
+            <p>How can one little street swallow so many lives?</p>
+            <p>Chances thrown</p>
+            <p>Nothing's free</p>
+            <p>Longing for what used to be</p>
+            <p>Still, it's hard</p>
+            <p>Hard to see</p>
+            <p>Fragile lives, shattered dreams</p>
+            <p>Jamie had a chance, well, she really did</p>
+            <p>Instead, she dropped out and had a couple of kids</p>
+            <p>Mark still lives at home because he's got no job</p>
+            <p>He just plays guitar and smokes a lot of pot</p>
+            <p>Jay committed suicide</p>
+            <p>Brandon OD'd and died</p>
+            <p>What the hell is going on?</p>
+            <p>The cruelest dream, reality</p>
+        </div>
+        </div>
+</body>
+
+</html>

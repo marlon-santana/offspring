@@ -2,16 +2,15 @@ html {
     font-family: Helvetica;
     background-color: #ddd;
     background-image: url('../img/logo2.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
 
   @media screen and (max-width: 768px) {
     html {
-      background-size: auto;
+      background-size: contain;
       background-color: #000000;
-      width: 100vw;   
     }
   }
 
@@ -26,9 +25,56 @@ html {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: calc(200vw - 60px);
-    margin: 61px;
+  width: 100vw;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .quotes-container {
+    background-color: #ddd;
+    width: 100vw;
+    padding: 0px !important;
+  }
+  
+  .dialog-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: none;
+    flex-direction: column;
+  }
+  
+  .biography-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dialog-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    border: none;
+    gap: 20px;
+  }
+  
+  }
+.main-title {
+  font-size: 72px !important;
+}
+
+.biography-container {
+  padding: 25px 0;
+  margin: 25px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
   .bold {
     font-weight: bold;
@@ -41,9 +87,6 @@ html {
   
   .main-title {
     font-size: 40px;
-    @media screen and (max-width: 768px) {
-        font-size: 100px;
-      }
   }
   
   .main-paragraph {
@@ -52,8 +95,9 @@ html {
   }
 @media screen and (max-width: 768px) {
   .main-paragraph {
-    font-size: 32px;
-  }
+    font-size: 24px;
+      line-height: 32px;
+    }
 
 }
   
@@ -69,7 +113,7 @@ html {
   
     @media screen and (max-width: 768px) {
     .featured-image img {
-      width: 171vw;
+      width: 100vw;
       }
       }
 
@@ -89,10 +133,11 @@ html {
 
   @media screen and (max-width: 768px) {
     .featured-image button {
-      top: 696px;
-      right: 291px;
-      min-width: 312px;
-      height: 69px;
+      top: 607px;
+        right: 0;
+        height: 56px;
+        left: 100px;
+        width: 243px;
     }
   }
 
@@ -102,7 +147,7 @@ html {
 
   @media screen and (max-width: 768px) {
     figcaption {
-      font-size: 32px;
+      font-size: 24px;
     }
   }
 
@@ -114,28 +159,25 @@ html {
 
       @media screen and (max-width: 768px) {
         p {
-          font-size: 32px;
-          line-height: 42px;
+          font-size: 24px;
+            line-height: 36px;
         }
       }
 
       @media screen and (max-width: 768px) {
         .curiosities-container li {
-          font-size: 32px;
-          line-height: 72px;
-          height: 70px;
+          font-size: 24px;
+            line-height: 24px;
+            height: 72px;
         }
       }
 
       @media screen and (max-width: 768px) {
         .quotes-container blockquote {
           font-weight: bold !important;
-          font-size: 72px !important;
+          font-size: 52px !important;
         }
-      }
-
-     
-  
+ }
   /* Biografia */
   .biography-container {
     padding: 25px 0;
@@ -176,7 +218,7 @@ html {
 
   @media screen and (max-width: 768px) {
     .img-bold img {
-      width: 171vw;
+      width: 100vw;
       margin-top: 20px;
     }
   }
@@ -194,20 +236,6 @@ html {
   }
 
   @media screen and (max-width: 768px) {
-    #myDialog, #myDialog2, #myDialog3 {
-      height: 600px !important;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-     #myDialog > h3 {
-      font-size: 48px !important;
-      text-align: center;
-      padding: 0px 26px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
     #myDialog2 > h3 {
      font-size: 48px !important;
      text-align: center;
@@ -220,36 +248,34 @@ html {
    font-size: 48px !important;
    text-align: center;
    padding: 0px 26px;
+  min-width: 241px;
  }
 }
 
 @media screen and (max-width: 768px) {
   #myDialog > p {
-   font-size: 32px;
-   line-height: 48px !important;
-   text-align: center !important;
-   padding: 0px 26px !important;
+    font-size: 24px;
+      line-height: 32px !important;
+      text-align: center !important;
+    padding: 0px 0px !important;
  }
 }
 @media screen and (max-width: 768px) {
   #myDialog2 > p {
-   font-size: 32px;
-   line-height: 48px !important;
-   text-align: center !important;
-   padding: 0px 26px !important;
+    font-size: 24px;
+      line-height: 32px !important;
+      text-align: center !important;
+    padding: 0px 0px !important;
  }
 }
 @media screen and (max-width: 768px) {
   #myDialog3 > p {
-   font-size: 32px;
-   line-height: 48px !important;
-   text-align: center !important;
-   padding: 0px 26px !important;
+    font-size: 24px;
+      line-height: 32px !important;
+      text-align: center !important;
+    padding: 0px 0px !important;
  }
 }
-
-
-
   .dialog-container {
     display: flex;
     align-items: center;
@@ -258,8 +284,9 @@ html {
     border: none;
   }  
 
-  #myDialog, #myDialog2, #myDialog3 {
-    /* display: flex; */
+    #myDialog,
+    #myDialog2,
+    #myDialog3 {
     justify-content: flex-start;
     flex-direction: column;
     width: 820px;
@@ -349,20 +376,6 @@ dialog {
 .icon-x:hover {
     color: #999999;
 }
-
-.accordion-button {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
 .accordion-button.active, .accordion-button:hover {
     background-color: #ccc;
 }
@@ -381,10 +394,252 @@ dialog {
     margin-top: 10px;
 }
 
-.accordion button::after {
-    content: '\002B';
-    color: #777;    
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+.music-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.accordion-2 {
+  background-color: #f1f1f1;
+  width: 100%;
+
+  border-radius: 5px;
+  overflow: hidden;
+  /* Garante que nada vazará do container */
+}
+
+.accordion-header {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0px 0px 10px;
+  position: relative;
+  user-select: none;
+}
+
+
+.accordion-content-2 {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease, opacity 0.9s ease;
+  padding: 0 10px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Esconda o checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Mostrar o conteúdo quando o checkbox está marcado */
+input[type="checkbox"]:checked+.accordion-header+.accordion-content-2 {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.accordion-3 {
+  background-color: #f1f1f1;
+  width: 100%;
+
+  border-radius: 5px;
+  overflow: hidden;
+  /* Garante que nada vazará do container */
+}
+
+.accordion-header-3 {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0px 0px 10px;
+  position: relative;
+  user-select: none;
+}
+
+.accordion-content-3 {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease, opacity 0.9s ease;
+  padding: 0 10px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Esconda o checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Mostrar o conteúdo quando o checkbox está marcado */
+input[type="checkbox"]:checked+.accordion-header-3+.accordion-content-3 {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+
+
+.accordion-4 {
+  background-color: #f1f1f1;
+  width: 100%;
+
+  border-radius: 5px;
+  overflow: hidden;
+  /* Garante que nada vazará do container */
+}
+
+.accordion-header-4 {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0px 0px 10px;
+  user-select: none;
+}
+
+.accordion-content-4 {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease, opacity 0.9s ease;
+  padding: 0 10px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Esconda o checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Mostrar o conteúdo quando o checkbox está marcado */
+input[type="checkbox"]:checked+.accordion-header-4+.accordion-content-4 {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.accordion-5 {
+  background-color: #f1f1f1;
+  width: 100%;
+
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-header-5 {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0px 0px 10px;
+  position: relative;
+  user-select: none;
+}
+
+.accordion-content-5 {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease, opacity 0.9s ease;
+  padding: 0 10px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Esconda o checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Mostrar o conteúdo quando o checkbox está marcado */
+input[type="checkbox"]:checked+.accordion-header-5+.accordion-content-5 {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.icon-plus {
+  margin-left: 900px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #999999;
+}
+
+@media screen and (max-width: 768px) {
+
+  .accordion-header,
+  .accordion-header-3,
+  .accordion-header-4,
+  .accordion-header-5 {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 17px;
+  }
+
+  input[type="checkbox"]:checked+.accordion-header+.accordion-content-2 {
+    max-height: 6328px;
+    opacity: 1;
+    padding: 10px;
+  }
+
+  input[type="checkbox"]:checked+.accordion-header-3+.accordion-content-3 {
+    max-height: 6328px;
+    opacity: 1;
+    padding: 10px;
+  }
+
+  input[type="checkbox"]:checked+.accordion-header-4+.accordion-content-4 {
+    max-height: 6328px;
+    opacity: 1;
+    padding: 10px;
+  }
+
+  input[type="checkbox"]:checked+.accordion-header-5+.accordion-content-5 {
+    max-height: 6328px;
+    opacity: 1;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .curiosities-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #myDialog,
+  #myDialog2,
+  #myDialog3 {
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  #myDialog h3 {
+    font-size: 32px;
+    color: #999999;
+    width: 241px;
+}
+
+.icon-x {
+  position: fixed;
+  top: 28px;
+  right: 22px;
+  font-size: 24px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+}
 }
