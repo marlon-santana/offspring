@@ -29,8 +29,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .container {
-  width: 97vw;
-    margin: 0 auto;
+  width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -117,10 +116,15 @@ html {
   
     @media screen and (max-width: 768px) {
     .featured-image img {
-      width: 99vw;
+      width: 100%;
       }
       }
 
+@media screen and (max-width: 768px) {
+  figure {
+    margin: 0;
+  }
+}
   .featured-image button {  
     background-color: transparent;
     border: 2px solid #ffffff;
@@ -137,11 +141,21 @@ html {
 
   @media screen and (max-width: 768px) {
     .featured-image button {
-      top: 607px;
+      top: 571px;
         right: 0;
         height: 56px;
         left: 100px;
-        width: 243px;
+      width: 233px;
+      }
+      }
+      
+      @media screen and (max-width: 380px) {
+        .featured-image button {
+          top: 542px;
+          right: 0;
+          height: 56px;
+          left: 61px;
+          width: 233px;
     }
   }
 
@@ -183,6 +197,17 @@ html {
           /* width: 100%; */
         }
  }
+@media screen and (max-width: 380px) {
+  .quotes-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .curiosities-container li {
+    height: 94px;
+  }
+}
   /* Biografia */
   .biography-container {
     padding: 25px 0;
@@ -223,7 +248,7 @@ html {
 
   @media screen and (max-width: 768px) {
     .img-bold img {
-      width: 96vw;
+      width: 100%;
       margin-top: 20px;
     }
   }
@@ -280,6 +305,18 @@ html {
       text-align: center !important;
     padding: 0px 0px !important;
  }
+}
+@media screen and (max-width: 768px) {
+
+  #myDialog,
+  #myDialog2,
+  #myDialog3>h3 {
+    font-size: 25px !important;
+    text-align: center;
+    padding: 0px 26px;
+    min-width: 241px;
+
+  }
 }
   .dialog-container {
     display: flex;
@@ -626,9 +663,10 @@ input[type="checkbox"]:checked+.accordion-header-5+.accordion-content-5 {
   #myDialog,
   #myDialog2,
   #myDialog3 {
-    width: 100vw;
+    width: 10vw;
     min-height: 100vh;
   }
+  
 
   #myDialog h3 {
     font-size: 32px;
